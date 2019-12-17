@@ -39,6 +39,19 @@ public class TreeNode {
 
     }
 
+    public void traverseInOrder() {
+
+        if(left != null) {
+            left.traverseInOrder();
+        }
+
+        System.out.print(data + ",");
+
+        if (right != null) {
+            right.traverseInOrder();
+        }
+    }
+
     public int getData() {
         return data;
     }
