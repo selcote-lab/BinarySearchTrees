@@ -16,6 +16,14 @@ public class Main {
         tree.insert(32);
 
         tree.traverseInOrder();
+        System.out.println();
+        System.out.println(tree.get(30));
+        System.out.println(tree.get(1000));
+
+        System.out.println(tree.min());
+        System.out.println(tree.max());
+
+
 
     }
 }
