@@ -53,6 +53,11 @@ public class Tree {
             else if (subtreeRoot.getRight() == null) {
                 return subtreeRoot.getLeft();
             }
+
+            // case 3 : node to delete has 2 children
+            subtreeRoot.setData(subtreeRoot.getRight().min());
+
+            subtreeRoot.setRight(delete(subtreeRoot.getRight(), subtreeRoot.getData()));
         }
         return subtreeRoot;
     }
